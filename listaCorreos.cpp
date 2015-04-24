@@ -10,12 +10,14 @@ void inicializar(tListaCorreos &correos){
 }
 
 bool cargar(tListaCorreos &correos, string dominio){
+return true;
 }
 
 void guardar(const tListaCorreos &correos, string dominio){
 }
 
 bool insertar(tListaCorreos &correos, const tCorreo &correo){
+return true;
 }
 
 bool buscar(const tListaCorreos &correos, string id, int &pos){
@@ -25,10 +27,10 @@ bool buscar(const tListaCorreos &correos, string id, int &pos){
 	while(ini<=fin && !encontrado){		//Mientras que mi rango de busqueda exista y no haya encontrado el elemento
 		mitad = (ini+fin) / 2;
 
-		if(id < correos.listaCorreos[mitad].identidad){
+		if(id < correos.listaCorreos[mitad].identificador){
 		fin = mitad - 1;
 		}
-		else if(correos.listaCorreos[mitad].identidad < id){
+		else if(correos.listaCorreos[mitad].identificador < id){
 		ini = mitad + 1;
 		}
 		else{

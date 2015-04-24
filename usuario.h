@@ -1,11 +1,13 @@
-#ifned USUARIO_H
+#ifndef USUARIO_H
 #define USUARIO_H
 #include <iostream>
 #include <string>
+#include "listaRegistros.h"
+
 using namespace std;
 
 typedef struct{
-string nombre;
+string identificador;
 string contrasenia;
 tListaRegistros bandejaEntrada;
 tListaRegistros bandejaSalida;

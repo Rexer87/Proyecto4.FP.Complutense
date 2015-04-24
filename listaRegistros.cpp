@@ -5,34 +5,28 @@
 
 using namespace std;
 
-typedef struct{
-string identificador;
-bool leido;
-}tRegistro;
-
-typedef struct{
-tRegistro registro[];
-int contador;
-}tListaRegistos;
-
-
-void inicializar(tListaRegCorreo &listaReg){
+void inicializar(tListaRegistros &listaReg){
 }
 
-void cargar(tListaRegCorreo &listaReg, ifstream& archivo){
+void cargar(tListaRegistros &listaReg, ifstream& archivo){
 }
 
-void guardar(const tListaRegCorreo &listaReg, ofstream& archivo){
+void guardar(const tListaRegistros &listaReg, ofstream& archivo){
 }
 
-bool insertar(tListaRegCorreo &listaReg, tRegCorreo registro){
+bool insertar(tListaRegistros &listaReg, tRegistro registro){
+return true;
 }
 
-bool borrar(tListaRegCorreo &listaReg, string id){
+bool borrar(tListaRegistros &listaReg, string id){
+return true;
 }
 
-bool correoLeido(tListaRegCorreo &listaReg, string id){
+bool correoLeido(tListaRegistros &listaReg, string id){
+return true;
 }
 
-int buscar(const tListaRegCorreo &listaReg, string id){
+int buscar(const tListaRegistros &listaReg, string id){
+	int pos;
+	return pos;
 }

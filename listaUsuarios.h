@@ -1,13 +1,18 @@
-#ifned LISTAUSUARIOS_H
+#ifndef LISTAUSUARIOS_H
 #define LISTAUSUARIOS_H
 #include <iostream>
 #include <string>
+#include <fstream>
+
 using namespace std;
 
 #include "usuario.h"
 
+const string ARCHIVO = "fdimail.com_Usuarios.txt";
+const int MAXUSUARIOS = 100;
+
 typedef struct{
-tUsuario usuario;
+tUsuario usuario[MAXUSUARIOS];
 int contador;
 }tListaUsuarios;
 
@@ -36,7 +41,7 @@ bool aniadir(tListaUsuarios& usuarios, const tUsuario& usuario);
 
 /**
 * Dado un identificador de usuario y la lista, devuelve, si dicho identificador existe en la lista, su posición y el valor true, 
-* y si no existe en la lista, la posición que le correspondería y el valor false.
+* y si no existe en la lista, la posición que le correspondería y el valor false. (IMPLEMENTADA)
 */
 bool buscarUsuario(const tListaUsuarios& usuarios, string id, int& posicion);
 #endif
