@@ -68,4 +68,13 @@ void borrarCorreo(tGestor& gestor, tListaRegistros& listaReg);
 */
 void lecturaRapida(tGestor& gestor, tListaRegistros& listaReg);
 
+/**
+*	Esta funcion muestra la interfaz de usuario y toma una opcion a partir del menu de opciones de la sesion de usuario ya arrancada
+*/
+void gestionarSesion(tGestor& gestor);
+
+/**
+*	Este subprograma muestra la interfaz basica del gestor 
+*/
+void mostrarInterfazUsuario(tGestor& gestor);
 #endif
