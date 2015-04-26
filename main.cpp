@@ -27,11 +27,11 @@ int opcion;
 			opcion = menu();
 			switch(opcion){
 				case 1:
-				//if(iniciarSesion(gestor))
+				if(iniciarSesion(gestor))
 					//gestionarSesion(gestor);
 					break;
 				case 2:
-				//if(crearCuenta(gestor))
+				if(crearCuenta(gestor))
 					//gestionarSesion(gestor);
 				break;
 			}

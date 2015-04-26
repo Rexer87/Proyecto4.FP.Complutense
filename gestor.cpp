@@ -1,6 +1,7 @@
 using namespace std;
 #include <iostream>
 #include <string>
+
 #include "gestor.h"
 
 bool arrancar(tGestor& gestor, string dominio){
@@ -42,5 +43,5 @@ void gestionarSesion(tGestor& gestor){
 	}while(opcion != 0);
 }
 
-void mostrarInterfazUsuario(gestor){
+void mostrarInterfazUsuario(tGestor& gestor){
 }

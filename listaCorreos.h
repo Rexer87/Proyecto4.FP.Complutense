@@ -1,5 +1,6 @@
 #ifndef LISTACORREOS_H
 #define LISTACORREOS_H
+using namespace std;
 
 #include "correo.h"
 

@@ -77,4 +77,5 @@ void gestionarSesion(tGestor& gestor);
 *	Este subprograma muestra la interfaz basica del gestor 
 */
 void mostrarInterfazUsuario(tGestor& gestor);
+
 #endif

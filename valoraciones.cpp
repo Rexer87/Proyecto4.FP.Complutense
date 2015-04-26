@@ -119,16 +119,4 @@ bool arrancar(tGestor& gestor){
 	return (cargar(gestor.listaUsuarios, dominio) && cargar(gestor.listaCorreos, dominio));
 }
 
-void gestionarSesion(tGestor& gestor){
-
-	do{
-		mostrarInterfazUsuario(gestor);
-		cin >> op;
-		if(op ==1){}
-		else if(op == 2){}
-		else if(op == 3){}
-		else if(op == 5){}
-	}while(op != 0);
-}
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
